@@ -1,4 +1,4 @@
-const animationIds = [
+const animations = [
   "animationPage1",
   "animationPage2",
   "animationPage3",
@@ -28,11 +28,11 @@ document.getElementById("buttonPlay").addEventListener("click", function () {
   button.style.display = 'none';
   titel.style.display = 'none';
 
-  document.getElementById(animationIds[0]).style.display = "block";
+  document.getElementById(animations[0]).style.display = "block";
 
-  for (var i = 0; i < animationIds.length; i++) {
-    const currentAnimation = document.getElementById(animationIds[i]);
-    const nextAnimation = document.getElementById(animationIds[i + 1]);
+  for (var i = 0; i < animations.length; i++) {
+    const currentAnimation = document.getElementById(animations[i]);
+    const nextAnimation = document.getElementById(animations[i + 1]);
 
     if (i == 14){ 
       break; 
